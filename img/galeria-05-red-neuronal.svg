@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600">
+  <title>Esquema de una red neuronal</title>
+  <rect width="800" height="600" fill="#eef4f8"/>
+  <g stroke="#1e3a5f" stroke-width="3">
+    <line x1="200" y1="180" x2="400" y2="140"/><line x1="200" y1="180" x2="400" y2="300"/><line x1="200" y1="180" x2="400" y2="460"/>
+    <line x1="200" y1="420" x2="400" y2="140"/><line x1="200" y1="420" x2="400" y2="300"/><line x1="200" y1="420" x2="400" y2="460"/>
+    <line x1="400" y1="140" x2="600" y2="300"/><line x1="400" y1="300" x2="600" y2="300"/><line x1="400" y1="460" x2="600" y2="300"/>
+  </g>
+  <circle cx="200" cy="180" r="36" fill="#0f9d8a"/>
+  <circle cx="200" cy="420" r="36" fill="#0f9d8a"/>
+  <circle cx="400" cy="140" r="36" fill="#1e3a5f"/>
+  <circle cx="400" cy="300" r="36" fill="#1e3a5f"/>
+  <circle cx="400" cy="460" r="36" fill="#1e3a5f"/>
+  <circle cx="600" cy="300" r="40" fill="#f2994a"/>
+</svg>

@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Galería de DataMind CR: ejemplos de análisis de datos, inteligencia artificial y automatización.">
+  <title>Galería | DataMind CR</title>
+</head>
+<body>
+  <!-- Enlace para saltar al contenido (accesibilidad con teclado) -->
+  <a class="enlace-saltar" href="#contenido-principal">Saltar al contenido principal</a>
+
+  <!-- Encabezado y menú común a las tres páginas -->
+  <header class="encabezado" id="arriba">
+    <a class="logo" href="index.html">
+      <img src="img/logo-datamind.svg" alt="DataMind CR, ir a Inicio" width="240" height="60">
+    </a>
+    <nav class="menu-principal" aria-label="Menú principal">
+      <ul class="menu-principal-lista">
+        <li><a class="menu-principal-enlace" href="index.html">Inicio</a></li>
+        <li><a class="menu-principal-enlace" href="galeria.html" aria-current="page">Galería</a></li>
+        <li><a class="menu-principal-enlace" href="contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Contenido principal de la página -->
+  <main id="contenido-principal">
+
+    <!-- Introducción de la galería -->
+    <section class="seccion seccion-presentacion" aria-labelledby="titulo-galeria">
+      <h1 id="titulo-galeria">Galería de proyectos</h1>
+      <p>
+        Ejemplos ilustrativos del tipo de soluciones que ofrecemos.
+        Puedes filtrarlos por categoría.
+      </p>
+
+      <!-- Navegación interna con enlaces de ancla -->
+      <nav class="navegacion-interna" aria-label="En esta página">
+        <ul>
+          <li><a href="#filtros-galeria">Ir a los filtros</a></li>
+          <li><a href="#lista-galeria">Ir a las imágenes</a></li>
+        </ul>
+      </nav>
+    </section>
+
+    <!-- Controles de la galería: la lógica la implementará JavaScript -->
+    <section class="seccion galeria-controles" id="filtros-galeria" aria-labelledby="titulo-filtros">
+      <h2 id="titulo-filtros">Filtrar por categoría</h2>
+      <div class="galeria-filtros" role="group" aria-label="Categorías de la galería">
+        <button class="boton boton-filtro" type="button" id="filtro-todas" data-filtro="todas" aria-pressed="true">Todas</button>
+        <button class="boton boton-filtro" type="button" id="filtro-analisis" data-filtro="analisis" aria-pressed="false">Análisis de datos</button>
+        <button class="boton boton-filtro" type="button" id="filtro-inteligencia-artificial" data-filtro="inteligencia-artificial" aria-pressed="false">Inteligencia artificial</button>
+        <button class="boton boton-filtro" type="button" id="filtro-automatizacion" data-filtro="automatizacion" aria-pressed="false">Automatización</button>
+      </div>
+      <button class="boton boton-reiniciar" type="button" id="boton-reiniciar-galeria">Reiniciar galería</button>
+
+      <!-- Mensaje de estado que JavaScript actualizará (anunciado por lectores de pantalla) -->
+      <p class="galeria-estado" id="estado-galeria" aria-live="polite">Mostrando las 10 imágenes.</p>
+    </section>
+
+    <!-- Lista de imágenes: cada figure tiene su categoría en data-categoria -->
+    <section class="seccion" id="lista-galeria" aria-labelledby="titulo-lista-galeria">
+      <h2 id="titulo-lista-galeria">Imágenes</h2>
+      <ul class="galeria">
+        <li class="galeria-elemento">
+          <figure class="galeria-figura" id="figura-01" data-categoria="analisis">
+            <img src="img/galeria-01-barras.svg" alt="Gráfico de barras con cuatro columnas de distinta altura" width="800" height="600" loading="lazy">
+            <figcaption>
+              <strong class="galeria-titulo">Comparación de ventas</strong>
+              <span class="galeria-descripcion">Gráfico de barras para comparar resultados entre periodos.</span>
+            </figcaption>
+          </figure>
+        </li>
+        <li class="galeria-elemento">
+          <figure class="galeria-figura" id="figura-02" data-categoria="analisis">
+            <img src="img/galeria-02-lineas.svg" alt="Gráfico con dos líneas de tendencia ascendentes" width="800" height="600" loading="lazy">
+            <figcaption>
+              <strong class="galeria-titulo">Tendencias en el tiempo</strong>
+              <span class="galeria-descripcion">Líneas que muestran la evolución de dos indicadores.</span>
+            </figcaption>
+          </figure>
+        </li>
+        <li class="galeria-elemento">
+          <figure class="galeria-figura" id="figura-03" data-categoria="analisis">
+            <img src="img/galeria-03-circular.svg" alt="Gráfico circular dividido en tres sectores de colores" width="800" height="600" loading="lazy">
+            <figcaption>
+              <strong class="galeria-titulo">Distribución por segmentos</strong>
+              <span class="galeria-descripcion">Gráfico circular con la proporción de cada grupo de clientes.</span>
+            </figcaption>
+          </figure>
+        </li>
+        <li class="galeria-elemento">
+          <figure class="galeria-figura" id="figura-04" data-categoria="analisis">
+            <img src="img/galeria-04-tablero.svg" alt="Tablero con tarjetas de indicadores y un gráfico de líneas" width="800" height="600" loading="lazy">
+            <figcaption>
+              <strong class="galeria-titulo">Tablero de indicadores</strong>
+              <span class="galeria-descripcion">Panel que reúne las métricas clave del negocio en una sola vista.</span>
+            </figcaption>
+          </figure>
+        </li>
+        <li class="galeria-elemento">
+          <figure class="galeria-figura" id="figura-05" data-categoria="inteligencia-artificial">
+            <img src="img/galeria-05-red-neuronal.svg" alt="Esquema de red neuronal con nodos conectados en tres capas" width="800" height="600" loading="lazy">
+            <figcaption>
+              <strong class="galeria-titulo">Modelo predictivo</strong>
+              <span class="galeria-descripcion">Red neuronal que aprende de datos históricos para anticipar resultados.</span>
+            </figcaption>
+          </figure>
+        </li>
+        <li class="galeria-elemento">
+          <figure class="galeria-figura" id="figura-06" data-categoria="inteligencia-artificial">
+            <img src="img/galeria-06-asistente.svg" alt="Burbujas de conversación entre una persona y un asistente virtual" width="800" height="600" loading="lazy">
+            <figcaption>
+              <strong class="galeria-titulo">Asistente virtual</strong>
+              <span class="galeria-descripcion">Atención automática de consultas frecuentes de clientes.</span>
+            </figcaption>
+          </figure>
+        </li>
+        <li class="galeria-elemento">
+          <figure class="galeria-figura" id="figura-07" data-categoria="inteligencia-artificial">
+            <img src="img/galeria-07-patrones.svg" alt="Puntos agrupados en dos conjuntos de colores y un punto aislado" width="800" height="600" loading="lazy">
+            <figcaption>
+              <strong class="galeria-titulo">Detección de patrones</strong>
+              <span class="galeria-descripcion">Agrupación de datos similares e identificación de casos atípicos.</span>
+            </figcaption>
+          </figure>
+        </li>
+        <li class="galeria-elemento">
+          <figure class="galeria-figura" id="figura-08" data-categoria="automatizacion">
+            <img src="img/galeria-08-flujo.svg" alt="Diagrama de tres pasos conectados por flechas" width="800" height="600" loading="lazy">
+            <figcaption>
+              <strong class="galeria-titulo">Flujo de trabajo</strong>
+              <span class="galeria-descripcion">Procesos que avanzan de un paso al siguiente sin intervención manual.</span>
+            </figcaption>
+          </figure>
+        </li>
+        <li class="galeria-elemento">
+          <figure class="galeria-figura" id="figura-09" data-categoria="automatizacion">
+            <img src="img/galeria-09-engranajes.svg" alt="Dos engranajes que encajan entre sí" width="800" height="600" loading="lazy">
+            <figcaption>
+              <strong class="galeria-titulo">Integración de sistemas</strong>
+              <span class="galeria-descripcion">Conexión entre herramientas para que compartan información.</span>
+            </figcaption>
+          </figure>
+        </li>
+        <li class="galeria-elemento">
+          <figure class="galeria-figura" id="figura-10" data-categoria="automatizacion">
+            <img src="img/galeria-10-tareas.svg" alt="Calendario con un día resaltado junto a un reloj" width="800" height="600" loading="lazy">
+            <figcaption>
+              <strong class="galeria-titulo">Tareas programadas</strong>
+              <span class="galeria-descripcion">Reportes y respaldos que se ejecutan automáticamente en fechas definidas.</span>
+            </figcaption>
+          </figure>
+        </li>
+      </ul>
+    </section>
+  </main>
+
+  <!-- Pie de página común a las tres páginas -->
+  <footer class="pie-pagina">
+    <p>&copy; 2026 DataMind CR · Proyecto académico de Desarrollo Web I. Empresa y datos ficticios.</p>
+    <p><a href="#arriba">Volver arriba</a></p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600">
+  <title>Engranajes que representan procesos automáticos</title>
+  <rect width="800" height="600" fill="#eef4f8"/>
+  <!-- Engranaje grande -->
+  <g fill="#1e3a5f">
+    <circle cx="320" cy="300" r="130"/>
+    <rect x="295" y="140" width="50" height="50"/><rect x="295" y="410" width="50" height="50"/>
+    <rect x="160" y="275" width="50" height="50"/><rect x="430" y="275" width="50" height="50"/>
+  </g>
+  <circle cx="320" cy="300" r="50" fill="#eef4f8"/>
+  <!-- Engranaje pequeño -->
+  <g fill="#0f9d8a">
+    <circle cx="560" cy="200" r="80"/>
+    <rect x="542" y="100" width="36" height="36"/><rect x="542" y="264" width="36" height="36"/>
+    <rect x="460" y="182" width="36" height="36"/><rect x="624" y="182" width="36" height="36"/>
+  </g>
+  <circle cx="560" cy="200" r="30" fill="#f2994a"/>
+</svg>

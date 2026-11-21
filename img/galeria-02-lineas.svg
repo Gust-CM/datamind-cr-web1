@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600">
+  <title>Gráfico de líneas de tendencia</title>
+  <rect width="800" height="600" fill="#eef4f8"/>
+  <line x1="100" y1="500" x2="720" y2="500" stroke="#1e3a5f" stroke-width="6"/>
+  <line x1="100" y1="100" x2="100" y2="500" stroke="#1e3a5f" stroke-width="6"/>
+  <polyline points="120,440 220,380 320,410 420,300 520,330 620,200 700,150" fill="none" stroke="#0f9d8a" stroke-width="10" stroke-linejoin="round"/>
+  <polyline points="120,470 220,450 320,420 420,420 520,380 620,360 700,320" fill="none" stroke="#f2994a" stroke-width="10" stroke-linejoin="round"/>
+</svg>
