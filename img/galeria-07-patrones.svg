@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600">
+  <title>Agrupación de datos por patrones</title>
+  <rect width="800" height="600" fill="#eef4f8"/>
+  <circle cx="250" cy="220" r="110" fill="none" stroke="#0f9d8a" stroke-width="4" stroke-dasharray="12 8"/>
+  <circle cx="540" cy="380" r="120" fill="none" stroke="#f2994a" stroke-width="4" stroke-dasharray="12 8"/>
+  <g fill="#0f9d8a">
+    <circle cx="210" cy="190" r="14"/><circle cx="270" cy="170" r="14"/><circle cx="240" cy="250" r="14"/><circle cx="300" cy="230" r="14"/><circle cx="190" cy="260" r="14"/>
+  </g>
+  <g fill="#f2994a">
+    <circle cx="500" cy="350" r="14"/><circle cx="570" cy="330" r="14"/><circle cx="530" cy="420" r="14"/><circle cx="600" cy="400" r="14"/><circle cx="480" cy="410" r="14"/>
+  </g>
+  <circle cx="640" cy="150" r="14" fill="#1e3a5f"/>
+</svg>

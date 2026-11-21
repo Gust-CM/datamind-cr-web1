@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contacta a DataMind CR para consultas sobre análisis de datos, inteligencia artificial y automatización.">
+  <title>Contacto | DataMind CR</title>
+</head>
+<body>
+  <!-- Enlace para saltar al contenido (accesibilidad con teclado) -->
+  <a class="enlace-saltar" href="#contenido-principal">Saltar al contenido principal</a>
+
+  <!-- Encabezado y menú común a las tres páginas -->
+  <header class="encabezado" id="arriba">
+    <a class="logo" href="index.html">
+      <img src="img/logo-datamind.svg" alt="DataMind CR, ir a Inicio" width="240" height="60">
+    </a>
+    <nav class="menu-principal" aria-label="Menú principal">
+      <ul class="menu-principal-lista">
+        <li><a class="menu-principal-enlace" href="index.html">Inicio</a></li>
+        <li><a class="menu-principal-enlace" href="galeria.html">Galería</a></li>
+        <li><a class="menu-principal-enlace" href="contacto.html" aria-current="page">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Contenido principal de la página -->
+  <main id="contenido-principal">
+
+    <!-- Introducción de la página -->
+    <section class="seccion seccion-presentacion" aria-labelledby="titulo-contacto">
+      <h1 id="titulo-contacto">Contáctanos</h1>
+      <p>¿Tienes un proyecto de datos en mente? Escríbenos y conversemos.</p>
+
+      <!-- Navegación interna con enlaces de ancla -->
+      <nav class="navegacion-interna" aria-label="En esta página">
+        <ul>
+          <li><a href="#medios-contacto">Ver medios de contacto</a></li>
+          <li><a href="#seccion-formulario">Ir al formulario</a></li>
+        </ul>
+      </nav>
+    </section>
+
+    <!-- Medios de contacto (todos los datos son demostrativos) -->
+    <section class="seccion" id="medios-contacto" aria-labelledby="titulo-medios">
+      <h2 id="titulo-medios">Medios de contacto</h2>
+      <p class="aviso-demostrativo">
+        <strong>Aviso:</strong> DataMind CR es una empresa ficticia creada para un proyecto académico.
+        El correo, el teléfono, la dirección y los perfiles de redes sociales son demostrativos.
+      </p>
+
+      <address class="datos-contacto">
+        <ul>
+          <li>Correo: <a href="mailto:contacto@datamindcr.example">contacto@datamindcr.example</a></li>
+          <li>Teléfono: <a href="tel:+50600000000">+506 0000-0000</a></li>
+          <li>Ubicación: San José, Costa Rica</li>
+        </ul>
+      </address>
+
+      <h3>Redes sociales</h3>
+      <p>Los enlaces llevan a la página principal de cada red social, no a perfiles reales.</p>
+      <ul class="redes-sociales">
+        <li><a class="red-social-enlace" href="https://www.linkedin.com/">LinkedIn (perfil demostrativo)</a></li>
+        <li><a class="red-social-enlace" href="https://www.facebook.com/">Facebook (perfil demostrativo)</a></li>
+        <li><a class="red-social-enlace" href="https://www.instagram.com/">Instagram (perfil demostrativo)</a></li>
+      </ul>
+    </section>
+
+    <!-- Formulario de contacto: la validación y el envío simulado los hará JavaScript -->
+    <section class="seccion" id="seccion-formulario" aria-labelledby="titulo-formulario">
+      <h2 id="titulo-formulario">Envíanos un mensaje</h2>
+      <p>Todos los campos son obligatorios. El envío es simulado: los datos no se guardan ni se envían a ningún servidor.</p>
+
+      <form class="formulario" id="formulario-contacto">
+        <div class="campo">
+          <label for="campo-nombre">Nombre completo</label>
+          <input type="text" id="campo-nombre" name="nombre" autocomplete="name"
+                 required minlength="3" maxlength="80" aria-describedby="error-nombre">
+          <p class="mensaje-error" id="error-nombre"></p>
+        </div>
+
+        <div class="campo">
+          <label for="campo-correo">Correo electrónico</label>
+          <input type="email" id="campo-correo" name="correo" autocomplete="email"
+                 required maxlength="100" aria-describedby="error-correo">
+          <p class="mensaje-error" id="error-correo"></p>
+        </div>
+
+        <div class="campo">
+          <label for="campo-asunto">Asunto</label>
+          <input type="text" id="campo-asunto" name="asunto"
+                 required minlength="5" maxlength="100" aria-describedby="error-asunto">
+          <p class="mensaje-error" id="error-asunto"></p>
+        </div>
+
+        <div class="campo">
+          <label for="campo-mensaje">Mensaje</label>
+          <textarea id="campo-mensaje" name="mensaje" rows="6"
+                    required minlength="20" maxlength="1000" aria-describedby="error-mensaje"></textarea>
+          <p class="mensaje-error" id="error-mensaje"></p>
+        </div>
+
+        <button class="boton boton-enviar" type="submit" id="boton-enviar">Enviar mensaje</button>
+      </form>
+
+      <!-- Confirmación oculta: JavaScript la mostrará (quitando hidden) y le dará el foco -->
+      <div class="mensaje-confirmacion" id="confirmacion-envio" role="status" tabindex="-1" hidden>
+        <p><strong>¡Gracias por escribirnos!</strong></p>
+        <p>Este envío es simulado: tu mensaje no se envió ni se guardó en ningún lugar.</p>
+      </div>
+    </section>
+  </main>
+
+  <!-- Pie de página común a las tres páginas -->
+  <footer class="pie-pagina">
+    <p>&copy; 2026 DataMind CR · Proyecto académico de Desarrollo Web I. Empresa y datos ficticios.</p>
+    <p><a href="#arriba">Volver arriba</a></p>
+  </footer>
+</body>
+</html>

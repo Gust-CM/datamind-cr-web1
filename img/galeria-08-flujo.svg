@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600">
+  <title>Diagrama de flujo de trabajo automatizado</title>
+  <rect width="800" height="600" fill="#eef4f8"/>
+  <rect x="60" y="250" width="160" height="100" rx="14" fill="#1e3a5f"/>
+  <rect x="320" y="250" width="160" height="100" rx="14" fill="#0f9d8a"/>
+  <rect x="580" y="250" width="160" height="100" rx="14" fill="#f2994a"/>
+  <g stroke="#1e3a5f" stroke-width="6" fill="#1e3a5f">
+    <line x1="220" y1="300" x2="300" y2="300"/><polygon points="300,285 320,300 300,315"/>
+    <line x1="480" y1="300" x2="560" y2="300"/><polygon points="560,285 580,300 560,315"/>
+  </g>
+</svg>
